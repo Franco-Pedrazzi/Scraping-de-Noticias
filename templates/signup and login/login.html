@@ -1,0 +1,26 @@
+{% extends "./base.html" %}
+
+{% block body %}
+<h2>Login</h2>
+<form action="/login" method="POST">
+  {{ form.csrf_token }}
+<div class="input-group mb-3">
+  <span class="input-group-text" id="inputGroup-sizing-default" style="border-color: black;">{{ form.user.label }}</span>
+  {{ form.user(size=20, class_="form-control", style="border-color: black;",aria_describedby="inputGroup-sizing-default") }}
+</div>
+<div class="input-group mb-3" >
+  <span class="input-group-text" id="inputGroup-sizing-default" style="border-color: black;">{{ form.password.label }}</span>
+  {{ form.password(size=20,type="password", class_="form-control", aria_describedby="inputGroup-sizing-default",style="border-color: black;") }}
+</div>
+
+
+<button type="submit" class="btn btn-dark">Login</button>
+
+</form>
+{% if info!="" and info!="True" %}
+<h3>{{info}}</h3>
+{% endif %}
+<div id="mensaje"></div>
+
+
+{% endblock %}

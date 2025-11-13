@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color-scheme: light dark;
+    font-size: clamp(.625rem,.47rem + .829vw,1rem);
+    box-sizing: inherit;
+    --bg-color: #10151d;
+    --white-color: #f2f6fa;
+    --light-gray: #bfc1c9;
+    --main-color: #a87ffb;
+    --gray-border: #2e3c51;
+    --link-color: #a87ffbcc;
+    background-color: var(--bg-color);
+    color: var(--white-color);
+    margin: 0;
+}
+h1{
+    font-family: "Archivo Black", Georgia, serif;
+    text-decoration: underline;
+}
+
+h2{
+    font-family: "Archivo Black",sans-serif !important;
+    
+}
+
+#login{
+    
+    font-family: Arial !important;
+    font-style: normal !important;
+}
+
+nav button{
+    background: none;
+    border: 0cm;
+}
+.bg-body-tertiary {
+    --bs-bg-opacity: 1;
+    background-color:rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+    color: white;
+}
+footer{
+    font-family: Sofia Sans Variable,sans-serif;
+    color-scheme: light dark;
+    font-size: clamp(.625rem,.47rem + .829vw,1rem);
+    --bg-color: #10151d;
+    --white-color: #f2f6fa;
+    --light-gray: #bfc1c9;
+    --main-color: #a87ffb;
+    --gray-border: #2e3c51;
+    --link-color: #a87ffbcc;
+    box-sizing: inherit;
+    color: #fff;
+    padding: 0 4rem;
+    background-color: #161f2c;
+    border-top: 1px solid var(--gray-border);
+    width: 100%;
+}
+
+footer .form-control{
+    background-color: #161f2c;
+    border-color: #f2f6fa;
+    
+}
+input::placeholder {
+    color: #f2f6fa;
+    
+}
+.myLargeTextArea {
+    width: 100%; 
+    height: 200px; 
+    font-size: 16px; 
+    padding: 10px;
+    resize: vertical; 
+}
+
+
+.card-holder {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	gap: 5em;
+	place-content: center;
+}
+
+.carousel-item{
+	width: 100%;
+	height: 400px;
+    overflow: hidden;
+}
+
+.carousel-item img{
+	width: 100%;
+	height: 100%;
+    object-fit: cover;
+}
+#allNav{
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 10;
+
+}

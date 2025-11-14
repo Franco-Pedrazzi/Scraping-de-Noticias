@@ -9,13 +9,14 @@ import sys,os
 from urllib.parse import urljoin
 
 rutas = Blueprint('rutas', __name__, template_folder='templates')
-
+noticias=[]
 @rutas.route("/")
 def Index():
     noticias=scraping()
     return render_template(
-        'Index.html',noticias=noticias
-    )
+        'Index.html',noticias=noticias,
+        Len=len(noticias)
+                )
 
 
 

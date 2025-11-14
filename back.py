@@ -6,8 +6,7 @@ from flask_login import  login_required, logout_user
 from py.Rutas import rutas
 from py.db import db
 from py.LyS import SyL,login_manager
-
-
+from py.Scraping import scraping
 app = Flask(__name__)
 CORS(app)
 

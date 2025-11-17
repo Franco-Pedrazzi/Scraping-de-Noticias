@@ -28,6 +28,9 @@ def logout():
     logout_user()
     return redirect('/')
 
+inicio=False
 
 if __name__ == "__main__":
+    scraping(True)
     app.run(debug=True)
+    
